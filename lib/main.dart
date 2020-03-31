@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:grocy/LoginScreen.dart';
 import 'front_page.dart';
-import 'home_page.dart';
+import 'shop_inventory_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.orange,
       ),
-      home: (FrontPage()),
+      home: (LoginScreen()),
     );
   }
 }

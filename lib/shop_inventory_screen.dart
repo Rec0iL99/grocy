@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'reusableCard.dart';
 
-class HomePage extends StatefulWidget {
+class ShopInventoryScreen extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _ShopInventoryScreenState createState() => _ShopInventoryScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
