@@ -14,7 +14,7 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
       appBar: AppBar(
         title: Text('GROCY'),
       ),
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: ListView(
           children: <Widget>[
@@ -32,9 +32,9 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                     ),
                     Expanded(
                       child: InventoryCard(
-                        image: 'images/milk.jpg',
-                        productName: 'AMUL GOLD MILK',
-                        productPrice: 'PRICE: Rs 22',
+                        image: 'images/rice.jpg',
+                        productName: 'INDIA GATE RICE',
+                        productPrice: 'PRICE: Rs 119',
                       ),
                     ),
                   ],
@@ -43,16 +43,16 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                   children: <Widget>[
                     Expanded(
                       child: InventoryCard(
-                        image: 'images/milk.jpg',
-                        productName: 'AMUL GOLD MILK',
-                        productPrice: 'PRICE: Rs 22',
+                        image: 'images/bisleri.jpeg',
+                        productName: 'BISLERI 10 LTR',
+                        productPrice: 'PRICE: Rs 90',
                       ),
                     ),
                     Expanded(
                       child: InventoryCard(
-                        image: 'images/milk.jpg',
-                        productName: 'AMUL GOLD MILK',
-                        productPrice: 'PRICE: Rs 22',
+                        image: 'images/oil.jpg',
+                        productName: 'FORTUNE OIL 1 LTR',
+                        productPrice: 'PRICE: Rs 300',
                       ),
                     ),
                   ],
@@ -61,16 +61,16 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                   children: <Widget>[
                     Expanded(
                       child: InventoryCard(
-                        image: 'images/milk.jpg',
-                        productName: 'AMUL GOLD MILK',
-                        productPrice: 'PRICE: Rs 22',
+                        image: 'images/nirma.jpg',
+                        productName: 'NIRMA POWDER',
+                        productPrice: 'PRICE: Rs 110',
                       ),
                     ),
                     Expanded(
                       child: InventoryCard(
-                        image: 'images/milk.jpg',
-                        productName: 'AMUL GOLD MILK',
-                        productPrice: 'PRICE: Rs 22',
+                        image: 'images/salt.jpg',
+                        productName: 'TATA SALT',
+                        productPrice: 'PRICE: Rs 39',
                       ),
                     ),
                   ],
@@ -84,42 +84,3 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
   }
 }
 
-Widget getList() {
-  var listView = ListView(
-    children: <Widget>[
-      ListTile(
-        title: Text('Shop 1'),
-        subtitle: Text('1 km'),
-      ),
-      ListTile(
-        title: Text('Shop 2'),
-        subtitle: Text('2 km'),
-      ),
-      ListTile(
-        title: Text('Shop 3'),
-        subtitle: Text('5 km'),
-      ),
-      ListTile(
-        title: Text('Shop 4'),
-        subtitle: Text('5 km'),
-      ),
-      ListTile(
-        title: Text('Shop 5'),
-        subtitle: Text('6 km'),
-      ),
-      ListTile(
-        title: Text('Shop 6'),
-        subtitle: Text('6 km'),
-      ),
-      ListTile(
-        title: Text('Shop 7'),
-        subtitle: Text('6 km'),
-      ),
-      ListTile(
-        title: Text('Shop 8'),
-        subtitle: Text('6 km'),
-      ),
-    ],
-  );
-  return listView;
-}

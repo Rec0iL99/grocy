@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.orange,
+        primaryColor: Color(0xFFF16615),
       ),
       home: (ShopInventoryScreen()),
     );

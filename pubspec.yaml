@@ -45,6 +45,11 @@ flutter:
     - images/logo.jpeg
     - images/logo.png
     - images/milk.jpg
+    - images/rice.jpg
+    - images/bisleri.jpeg
+    - images/oil.jpg
+    - images/nirma.jpg
+    - images/salt.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
