@@ -7,13 +7,13 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
 
-  Color buttonColor = Color(0xffc17900);
+  Color buttonColor = Color(0xFF78C72D);
   final _email = TextEditingController();
   final _password = TextEditingController();
-  Color bgColor = Color(0xFFFFA726);
+  Color bgColor = Color(0xFFF16615);
   Color fieldColor = Color(0xff80e27e);
 
-  Color boxColor = Color(0xffE4E3E3);
+  Color boxColor = Color(0xFFF16615);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 360.0,
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: Color(0xFFF16615),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -56,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(20))),
                                   prefixIcon: Icon(Icons.accessibility),
-                                  hintText: "Phone Number",
+                                  hintText: "Email / Phone Number",
                                   filled: true,
                                   fillColor: Colors.white),
                             ),
