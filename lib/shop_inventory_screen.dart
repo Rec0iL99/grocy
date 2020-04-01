@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'reusableCard.dart';
+import 'inventoryCard.dart';
 
 class ShopInventoryScreen extends StatefulWidget {
   @override
@@ -24,29 +24,17 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                   ],
@@ -54,29 +42,17 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                   ],
@@ -84,29 +60,17 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                     Expanded(
-                      child: ReusableCard(
-                        cardChild: Column(
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage('images/milk.jpg'),
-                            ),
-                            Text('AMUL GOLD MILK'),
-                            Text('PRICE: Rs 22')
-                          ],
-                        ),
+                      child: InventoryCard(
+                        image: 'images/milk.jpg',
+                        productName: 'AMUL GOLD MILK',
+                        productPrice: 'PRICE: Rs 22',
                       ),
                     ),
                   ],
@@ -119,8 +83,6 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
     );
   }
 }
-
-
 
 Widget getList() {
   var listView = ListView(
