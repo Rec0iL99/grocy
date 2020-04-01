@@ -8,17 +8,52 @@ class ShopInventoryScreen extends StatefulWidget {
 }
 
 class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
+
+  Icon cusIcon = Icon(Icons.search);
+  Widget cusSearchBar = Text("GROCY");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GROCY'),
+        title: cusSearchBar,
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0),
+            child: IconButton(
+              onPressed: () {
+                setState(() {
+                  if(this.cusIcon.icon == Icons.search) {
+                    this.cusIcon = Icon(Icons.cancel);
+                    this.cusSearchBar = TextField(
+                      textInputAction: TextInputAction.go,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search for item...",
+                        hintStyle: TextStyle(
+                          color: Colors.white
+                        )
+                      ),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0
+                      ),
+                    );
+                  } else {
+                    this.cusIcon = Icon(Icons.search);
+                    this.cusSearchBar = Text("GROCY");
+                  }
+                });
+              },
+              icon: cusIcon,
+            ),
+          )
+        ],
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: ListView(
           children: <Widget>[
-            Text("FAKE SEARCH BAR"),
             Column(
               children: <Widget>[
                 Row(
