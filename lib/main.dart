@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocy/LoginScreen.dart';
+import 'package:grocy/login_screen.dart';
+import 'package:grocy/shops_nearby.dart';
+import 'package:grocy/welcome_screen.dart';
 import 'front_page.dart';
 import 'shop_inventory_screen.dart';
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.orange,
       ),
-      home: (LoginScreen()),
+      home: (ShopsNearBy()),
     );
   }
 }

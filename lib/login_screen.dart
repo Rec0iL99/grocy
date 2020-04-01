@@ -56,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       borderRadius: BorderRadius.all(
                                           Radius.circular(20))),
                                   prefixIcon: Icon(Icons.accessibility),
-                                  hintText: "Email",
+                                  hintText: "Phone Number",
                                   filled: true,
                                   fillColor: Colors.white),
                             ),
