@@ -19,7 +19,7 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
         title: cusSearchBar,
         actions: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(right: 16.0),
+            padding: const EdgeInsets.only(right: 4.0),
             child: IconButton(
               onPressed: () {
                 setState(() {
@@ -46,6 +46,24 @@ class _ShopInventoryScreenState extends State<ShopInventoryScreen> {
                 });
               },
               icon: cusIcon,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right:4.0),
+            child: IconButton(
+              onPressed: () {
+
+              },
+              icon: Icon(Icons.add_shopping_cart),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right:16.0),
+            child: IconButton(
+              onPressed: () {
+
+              },
+              icon: Icon(Icons.call),
             ),
           )
         ],

@@ -47,7 +47,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 8.0),
+              padding: EdgeInsets.only(left: 16.0, right: 16.0),
               child: SizedBox(
                 width: double.infinity,
                 height: 40.0,
@@ -58,6 +58,26 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   },
                   child: Text(
                     'Sign up',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
+              child: SizedBox(
+                width: double.infinity,
+                height: 40.0,
+                child: RaisedButton(
+                  color: Colors.red[900],
+                  onPressed: () {
+                    print("Sign up");
+                  },
+                  child: Text(
+                    'Helpline Number',
                     style: TextStyle(
                         fontSize: 16.0,
                         color: Colors.white
